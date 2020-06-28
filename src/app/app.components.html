@@ -7,8 +7,10 @@
     <span>Contact</span>
 </mat-toolbar>
 
-<section id="1" style="margin-top:100px;height: 85vh;background-color:blue">
-    <!-- Carousel -->
+<section id="1" style="margin-top:100px;">
+    <div class="container">
+        <carousel [slides]="slides" [animationType]="animationType"></carousel>
+    </div>
 </section>
 
 <section fxLayout="row" fxLayoutGap="15px" id="team" fxLayoutAlign="center center">
@@ -34,7 +36,7 @@
 
 </section>
 
-<section fxLayout="column" fxLayoutGap="20px" id="team" fxLayoutAlign="start center">
+<!-- <section fxLayout="column" fxLayoutGap="20px"  fxLayoutAlign="start center">
     <span fxLayout="column" fxFlexOffset="5" fxLayoutAlign="center center">
         <span class="title">
             Meet The Team
@@ -87,7 +89,7 @@
     <div></div>
     <div></div>
 
-</section>
+</section> -->
 
 <section fxLayout="column" fxLayoutGap="20px" id="3" fxLayoutAlign="start center">
     <span class="title" fxFlexOffset="2">Facilites</span>
@@ -98,8 +100,12 @@
 
 <section fxLayout="column" fxLayoutGap="20px" id="team" fxLayoutAlign="start center">
     <span class="title" fxFlexOffset="2">Gallery</span>
-    <div>
-
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="center center">
+        <div *ngFor="let mem of members| slice:0:8;let i=index">
+            <div class="img-hover-zoom">
+                <img [src]="mem.img" height="300px">
+            </div>
+        </div>
     </div>
 </section>
 

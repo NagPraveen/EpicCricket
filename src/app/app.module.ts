@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card'
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
