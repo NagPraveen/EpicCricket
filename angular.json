@@ -104,6 +104,10 @@
           "options": {
             "browserTarget": "EpicCricket:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

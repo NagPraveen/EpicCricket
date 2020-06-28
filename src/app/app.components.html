@@ -2,7 +2,7 @@
     <span class="nav-links animate__animated animate__bounce" [class.active]="currentSection=='section1'"
         (click)="scrollTo('section1')">Home</span>
     <span class="nav-links" [class.active]="currentSection=='team'" (click)="scrollTo('team')">About Epic</span>
-    <span><img src="../assets/Logo.png" class="logo" alt="Logo"></span>
+    <span><img src="assets/Logo.png" class="logo" alt="Logo"></span>
     <span class="nav-links" [class.active]="currentSection=='section4'" (click)="scrollTo('section4')">Facitiles</span>
     <span class="nav-links" [class.active]="currentSection=='section3'" (click)="scrollTo('section3')">Gallery</span>
     <span class="nav-links" [class.active]="currentSection=='contact'" (click)="scrollTo('contact')">Contact</span>
@@ -20,8 +20,8 @@
     <section fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="15px" id="team" fxLayoutAlign="center center">
 
         <div fxFlex=50 fxLayoutAlign="center center" fxLayout="column">
-            <img src="../assets/brand.PNG" height="150px">
-            <img src="../assets/Logo.png" height="150px">
+            <img src="assets/brand.PNG" height="150px">
+            <img src="assets/Logo.png" height="150px">
 
         </div>
         <div fxFlex fxLayout="column" fxLayoutAlign="center" fxLayoutAlign.lt-md="center center" fxLayoutGap="30px">
@@ -101,8 +101,10 @@
         <span class="bg-text" fxFlexOffset="2" fxLayoutAlign="center center">Facilites</span>
         <div fxLayout="row" fxFlex>
             <span fxFlex=10></span>
-            <div class="bg" fxFlex=90 fxLayout="row wrap" fxLayoutGap="50px grid" fxLayoutAlign="start center">
-                <div *ngFor="let f of facilites" class="text" fxFlex=45 fxLayoutAlign="start stretch">
+            <div class="bg" fxFlex=90 fxLayout="row wrap" fxLayoutGap="50px grid" fxLayoutGap.lt-md="20px grid"
+                fxLayoutAlign="start center">
+                <div *ngFor="let f of facilites" class="text" fxFlex=45 fxFLex.lt-md=90 fxLayoutAlign="start stretch"
+                    fxLayoutAlign.lt-md="start stretch">
                     <span style="border-color: #f27052;
                    border-left: 8px solid red;
                    margin-right: 19px;"></span>

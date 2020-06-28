@@ -53,17 +53,17 @@ export class AppComponent {
     {
       headline: "For Your Current Mood",
       src:
-        "../assets/gallery1.jpg"
+        "assets/gallery1.jpg"
     },
     {
       headline: "Miouw",
       src:
-        "../assets/gallery2.jpg"
+        "assets/gallery2.jpg"
     },
     {
       headline: "Miouw",
       src:
-        "../assets/gallery3.jpg"
+        "assets/gallery3.jpg"
     }
   ];
 
@@ -77,11 +77,12 @@ export class AppComponent {
 
   title = 'EpicCricket';
   gallery = [
-    { name: "Member 1", img: "../assets/pic1.jpg" },
-    { name: "Member 2", img: "../assets/pic2.jpg" },
-    { name: "Member 3", img: "../assets/pic3.jpg" },
-    { name: "Member 4", img: "../assets/pic4.jpg" },
-    { name: "Member 5", img: "../assets/pic5.jpg" }
+    { name: "Member 1", img: "assets/pic1.jpg" },
+    { name: "Member 2", img: "assets/pic2.jpg" },
+    { name: "Member 3", img: "assets/pic6.jpg" },
+    { name: "Member 3", img: "assets/pic3.jpg" },
+    { name: "Member 4", img: "assets/pic4.jpg" },
+    { name: "Member 5", img: "assets/pic5.jpg" }
 
   ]
 
