@@ -45,19 +45,16 @@
                 </div>
             </section>
 
-            <section fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="15px" id="team" fxLayoutAlign="center center">
-
-                <div fxFlex=50 fxLayoutAlign="center center" fxLayout="column">
-                    <img src="assets/brand.PNG" height="150px">
-                    <img src="assets/Logo.png" height="150px">
-
+            <section fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="15px" id="team"
+                fxLayoutAlign.gt-sm="center center">
+                <div fxFlex.gt-sm=50 fxLayoutAlign.gt-sm="center center" fxLayout="column">
+                    <img src="assets/brand.PNG" height="70vh">
+                    <img src="assets/Logo.png" height="150px" fxHide.sm fxHide.lt-sm>
                 </div>
-                <div fxFlex fxLayout="column" fxLayoutAlign="center" fxLayoutAlign.lt-sm="center center"
-                    fxLayoutGap="30px">
-                    <h1 fxFlexOffset="5" class="title"> ABOUT EPIC</h1>
+                <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="30px">
+                    <h1 fxFlexOffset.gt-sm="5" class="title"> ABOUT EPIC</h1>
                     <h2>MISSION & VISION</h2>
-                    <span class="desc
-            ">
+                    <span class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan dolor id enim lacinia,
                         sed
                         feugiat
@@ -177,8 +174,8 @@
                         <span>Location</span>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.4719771255423!2d76.87633581460375!3d8.550530493853643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bfd59ada343f%3A0x11c74379636abc60!2sEpic%20cricket%20academy!5e0!3m2!1sen!2sus!4v1593264377575!5m2!1sen!2sus"
-                            width="700" height="350" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                            height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
                     </span>
                     <!-- <span class="title" fxFlex=30 fxLayout="column">
                 <span>Subscribe</span>
