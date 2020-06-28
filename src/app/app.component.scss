@@ -12,9 +12,27 @@
     top:0;
 }
 
+#section4{
+    background-attachment: fixed;
+    background-size:cover;
+    background-image: url('../assets/background.jpg');
+}
+.bg-text{
+    color:lightgrey;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.text{
+    color:white;
+    font-size:25px;
+    
+}
+
 section{
     min-height:70vh ;
-   &#team{
+   &#team,&#section3{
         background-color: #eaeaea;
     }
    &#contact{
@@ -22,21 +40,13 @@ section{
    }
 }
 
-mat-card{
-    padding:0px !important;
-    box-shadow: rgba(36, 38, 53, 0.09) 0px 20px 35px;
-    border-width: 0px;
-    border-color: rgb(255, 255, 255);
-    border-radius: 7px;
-
-}
 img{
     border-radius: 7px;
     // border-top-right-radius: 7px;
 }
 
 .img-hover-zoom {
-    // height: 200px; /* [1.1] Set it as per your need */
+    // height: 250px; /* [1.1] Set it as per your need */
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
   }
   
@@ -47,7 +57,7 @@ img{
   
   /* [3] Finally, transforming the image when container gets hovered */
   .img-hover-zoom:hover img {
-    transform: scale(1.5);
+    transform: scale(1.5);  
   }
 
 .mem-title{
@@ -87,18 +97,22 @@ img{
 }
 
 .container {
-    // display: block;
-    height: 90vh;
-    width: 98.9vw;
-    max-height: 600px;
-    // // max-width: 750px;
-    // // padding: 2em 2em 0;
-  
-    // // position: absolute;
-    // // top: 50%;
-    // // left: 50%;
-    // // transform: translate(-50%, -50%);
+    height: 75vh;
     display: flex;
     flex-direction: column;
   }
-  
+
+  .gallery{
+      margin:0px !important;
+    *>img{
+        border:5px solid white;
+    }
+    
+  }
+
+  .nav-links {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }

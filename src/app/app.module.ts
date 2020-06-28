@@ -5,15 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ScrollSpyDirective } from './scroll-spy.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent
+    CarouselComponent,
+    ScrollSpyDirective
   ],
   imports: [
     BrowserModule,
@@ -21,6 +24,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
+    MatDialogModule,
     FlexLayoutModule
   ],
   providers: [],
