@@ -19,15 +19,28 @@
 }
 .bg-text{
     color:lightgrey;
-    font-size: 40px;
+    font-size: 2.5vw;
     font-weight: bold;
     text-transform: uppercase;
     
 }
 .text{
     color:white;
-    font-size:25px;
+    font-size:2.2vw;
     
+}
+
+.sideNav{
+    margin-top:100px;
+    width: 20vw;
+}
+.side-links{
+    color:#161d4a;
+    cursor: pointer;
+}
+
+.desc{
+    font-size: 1rem;
 }
 
 section{
